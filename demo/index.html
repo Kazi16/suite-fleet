@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Suite Fleet is a personal agent infrastructure running real daily work, rebuilt on Meta models for the Meta Global AI Developer Hackathon.">
+  <title>Suite Fleet — Kazi Paruaz Prince</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="wordmark" aria-label="Suite Fleet">Suite <span class="wordmark-accent">Fleet</span></div>
+      <nav aria-label="Public profiles" class="profile-links">
+        <a href="https://github.com/Kazi16" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/kaziprince/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">A personal agent infrastructure that runs my real life, rebuilt on Meta models</h1>
+          <p>Suite Fleet is a working collection of agents on one small server. This hackathon build puts Meta models into the daily jobs the fleet already handles, then measures the results in public.</p>
+        </div>
+        <div class="hero-aside" aria-label="Project status">
+          <span class="aside-rule" aria-hidden="true"></span>
+          <p class="aside-label">Built from a live workflow</p>
+          <p class="aside-value">One server.<br>Real daily work.<br>Measurable model choices.</p>
+        </div>
+      </section>
+
+      <section class="section story-section" aria-labelledby="story-title">
+        <div class="section-heading">
+          <span class="section-number">01 / THE STORY</span>
+          <h2 id="story-title">A fleet that already has a job</h2>
+        </div>
+        <div class="story-copy">
+          <p>The fleet runs on one small server and helps with the work that fills an ordinary day: triaging mail across several accounts, scoring job leads, watching deals, and keeping study routines moving. It also supports a personal suite for mail, notes, files, and chat.</p>
+          <p>Agent seats coordinate through an authenticated room. A coding lane turns requests into software changes, while an independent reviewer seat checks the work before release. The owner stays in control: money, messages to other people, and submissions pass through hard personal approval gates.</p>
+        </div>
+      </section>
+
+      <section class="section build-section" aria-labelledby="build-title">
+        <div class="section-heading">
+          <span class="section-number">02 / THE HACKATHON BUILD</span>
+          <h2 id="build-title">Four pieces, one working system</h2>
+          <p>The fleet and its workloads already exist. The ten days are for integration, measurement, and polish.</p>
+        </div>
+        <div class="build-grid">
+          <article class="build-card">
+            <span class="card-number">01</span>
+            <h3>Model routing layer</h3>
+            <p>Route work across coding, research, triage, summarization, and image lanes.</p>
+          </article>
+          <article class="build-card">
+            <span class="card-number">02</span>
+            <h3>Meta model lanes</h3>
+            <p>Put Meta models to work on real daily jobs inside the existing fleet.</p>
+          </article>
+          <article class="build-card">
+            <span class="card-number">03</span>
+            <h3>Public results dashboard</h3>
+            <p>Compare cost, latency, and accept or reject verdicts for each task type.</p>
+          </article>
+          <article class="build-card">
+            <span class="card-number">04 <span class="stretch-tag">STRETCH GOAL</span></span>
+            <h3>E ink day brief</h3>
+            <p>Bring the day's most useful fleet output onto a quiet, glanceable display.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section architecture-section" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <span class="section-number">03 / ARCHITECTURE</span>
+          <h2 id="architecture-title">Clear roles, deliberate handoffs</h2>
+          <p>The owner directs the fleet. Specialist seats and model lanes do the work; the reviewer checks changes before they move forward.</p>
+        </div>
+        <div class="diagram-scroll">
+          <svg class="architecture-diagram" viewBox="0 0 1000 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagram-title diagram-desc">
+            <title id="diagram-title">Suite Fleet architecture</title>
+            <desc id="diagram-desc">Owner directs agent seats. Agent seats coordinate with a coding lane, reviewer seat, personal suite, and Meta Model API lanes. The coding lane also hands work to the reviewer seat.</desc>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#6775a2" stroke-width="1.8"/>
+              </marker>
+            </defs>
+            <g class="diagram-lines" fill="none" stroke="#6775a2" stroke-width="2" marker-end="url(#arrow)">
+              <path d="M 500 82 L 500 136"/>
+              <path d="M 405 180 L 243 180 L 243 241"/>
+              <path d="M 595 180 L 757 180 L 757 241"/>
+              <path d="M 315 282 L 683 282"/>
+              <path d="M 466 222 L 466 324 L 243 324 L 243 347"/>
+              <path d="M 534 222 L 534 324 L 757 324 L 757 347"/>
+            </g>
+            <g class="diagram-box owner-box"><rect x="405" y="24" width="190" height="58" rx="14"/><text x="500" y="60">Owner</text></g>
+            <g class="diagram-box main-box"><rect x="405" y="136" width="190" height="86" rx="17"/><text x="500" y="186">Agent seats</text></g>
+            <g class="diagram-box"><rect x="117" y="241" width="252" height="82" rx="17"/><text x="243" y="289">Coding lane</text></g>
+            <g class="diagram-box"><rect x="631" y="241" width="252" height="82" rx="17"/><text x="757" y="289">Reviewer seat</text></g>
+            <g class="diagram-box"><rect x="117" y="347" width="252" height="58" rx="14"/><text x="243" y="382">Personal suite</text></g>
+            <g class="diagram-box"><rect x="631" y="347" width="252" height="58" rx="14"/><text x="757" y="382">Meta Model API lanes</text></g>
+          </svg>
+        </div>
+        <p class="diagram-note">Approval gates remain with the owner for spending, outbound messages, and submissions.</p>
+      </section>
+
+      <section class="section gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading">
+          <span class="section-number">04 / VISUALS</span>
+          <h2 id="gallery-title">A place for the real screens</h2>
+          <p>These frames are reserved for public exports from the build.</p>
+        </div>
+        <div class="image-grid">
+          <figure class="image-slot"><img class="image-frame" src="suite-ui-shared-pieces.png" alt="Suite UI shared pieces design frame showing the header, buttons, navigation, and spacing scale" loading="lazy"><figcaption>Suite UI design frames</figcaption></figure>
+          <figure class="image-slot"><div class="image-frame" aria-hidden="true"></div><figcaption>Fleet dashboard</figcaption></figure>
+          <figure class="image-slot"><div class="image-frame" aria-hidden="true"></div><figcaption>Day brief display</figcaption></figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built by Kazi Paruaz Prince.</p>
+      <p>Meta Global AI Developer Hackathon<br>Indie developer track · Build for Your World theme</p>
+    </footer>
+  </div>
+</body>
+</html>
