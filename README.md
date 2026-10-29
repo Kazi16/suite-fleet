@@ -37,18 +37,21 @@ LICENSE            proprietary license: viewing and evaluation only
 demo/              the demo site source (index.html, styles.css), live at the demo link above
 ```
 
-These pieces land here as I build them during the event:
+These pieces landed here as I built them during the event:
 
 ```text
-routing/           ARRIVING DURING THE EVENT: the model routing layer that sends
-                   each fleet job to a chosen model lane and logs cost and latency
-lanes/             ARRIVING DURING THE EVENT: the Meta model lanes for mail triage,
-                   job lead scoring, deal evaluation, and notes QA
-dashboard/         ARRIVING DURING THE EVENT: the public results dashboard source,
-                   with the measured runs that feed it
+routing/           the model routing layer that sends each fleet job to a
+                   chosen model lane and logs cost and latency
+lanes/             the Meta model lanes for mail triage and job lead scoring,
+                   with their ledgers and measured results
+dashboard/         the public results dashboard source that renders the
+                   measured runs
+tools/             the hardened builder lane launcher: builds run detached with
+                   a heartbeat log and a terminal exit marker, so a dropped
+                   session no longer loses the build
 ```
 
-These three pieces are not in the repo yet. They will arrive during the event window as I build and review them, and the dashboard data will arrive with them.
+The measured lanes published here today are mail triage and job lead scoring. Deal evaluation and notes QA run in the fleet but have no measured runs published yet.
 
 ## Architecture
 

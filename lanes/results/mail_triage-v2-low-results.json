@@ -1,0 +1,202 @@
+[
+  {
+    "id": 185320,
+    "spark": {
+      "category": "finance",
+      "summary": "Your Quicksilver Secured credit card statement is ready",
+      "priority": "medium",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "finance",
+      "summary": "Capital One notification that your Quicksilver Secured Credit Card statement is ready.",
+      "priority": "medium",
+      "confidence": "high"
+    },
+    "agree": true,
+    "job_ref": "821d8dca3280",
+    "verdict": "pending",
+    "spark_priority": "medium",
+    "wonder_priority": "medium"
+  },
+  {
+    "id": 185319,
+    "spark": {
+      "category": "job_alert",
+      "summary": "LinkedIn job alert for Technology Support Specialist I role at Broward County Public Schools.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "job_alert",
+      "summary": "LinkedIn Job Alerts notification for a Technology Support Specialist I position at Broward County Public Schools.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": true,
+    "job_ref": "4cd5f2e9b666",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185317,
+    "spark": {
+      "category": "promotional",
+      "summary": "Promotional email from Microsoft Surface encouraging the recipient to choose a Surface device.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "marketing",
+      "summary": "Promotional email from Microsoft Surface encouraging the recipient to choose and purchase a Surface device.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": false,
+    "job_ref": "782151e763c7",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185316,
+    "spark": {
+      "category": "promotion",
+      "summary": "Megabus promotional email noting one month until Thanksgiving.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "promotion",
+      "summary": "Megabus promotional email noting Thanksgiving is one month away, likely encouraging holiday travel booking.",
+      "priority": "low",
+      "confidence": "medium"
+    },
+    "agree": true,
+    "job_ref": "2b81bfbf9051",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185315,
+    "spark": {
+      "category": "promotion",
+      "summary": "Amtrak promotional email offering a bring-a-friend deal that is about to expire.",
+      "priority": "low",
+      "confidence": "medium"
+    },
+    "wonder": {
+      "category": "promotion",
+      "summary": "Amtrak promotional email advertising a limited-time offer to bring a friend for free.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": true,
+    "job_ref": "84b3d8b429b2",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185314,
+    "spark": {
+      "category": "promotion",
+      "summary": "Promotional email from Current advertising Current Max benefits to get more value for every dollar.",
+      "priority": "low",
+      "confidence": "medium"
+    },
+    "wonder": {
+      "category": "promotion",
+      "summary": "Promotional email from Current advertising its Current Max offering to help customers get more value for every dollar.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": true,
+    "job_ref": "ff93d54de3ef",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185312,
+    "spark": {
+      "category": "promotional",
+      "summary": "Allegiant promotional email inviting recipients to enter for a chance to win a trip for two.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "promotion",
+      "summary": "Allegiant promotional contest offering a chance to win a trip for two.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": false,
+    "job_ref": "40967f969aba",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185311,
+    "spark": {
+      "category": "promotional",
+      "summary": "Reminder from ActualTech Media about the upcoming webinar 'Govern to Recover: A NIST CSF 2.0 Playbook for Unstructured Data Resilience' in 2 days.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "event_reminder",
+      "summary": "Reminder from ActualTech Media about an event in 2 days titled 'Govern to Recover: A NIST CSF 2.0 Playbook for Unstructured Data Resilience'.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": false,
+    "job_ref": "f78000b04aa6",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185310,
+    "spark": {
+      "category": "order_confirmation",
+      "summary": "Whole Foods Market order received via Amazon.com",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "order_confirmation",
+      "summary": "Whole Foods Market order placed via Amazon has been received.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": true,
+    "job_ref": "619e36902ed1",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  },
+  {
+    "id": 185309,
+    "spark": {
+      "category": "order_cancellation",
+      "summary": "Whole Foods Market order cancellation notification from Amazon.com",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "wonder": {
+      "category": "Order Cancellation",
+      "summary": "Confirmation that the recipient cancelled their Whole Foods Market order placed via Amazon.",
+      "priority": "low",
+      "confidence": "high"
+    },
+    "agree": false,
+    "job_ref": "605c8eb33985",
+    "verdict": "pending",
+    "spark_priority": "low",
+    "wonder_priority": "low"
+  }
+]

@@ -1,0 +1,49 @@
+{
+ "api_base": "https://api.meta.ai/v1",
+ "budget_cap_usd": 120.0,
+ "lanes": {
+  "deal_eval": {
+   "benchmark": true,
+   "default_model": "muse-spark-1.3",
+   "escalation_allowed": true,
+   "heavy_model": "muse-wonder-1.0",
+   "reasoning_effort": "low"
+  },
+  "job_scoring": {
+   "benchmark": true,
+   "default_model": "muse-spark-1.3",
+   "escalation_allowed": true,
+   "heavy_model": "muse-wonder-1.0",
+   "reasoning_effort": "high"
+  },
+  "mail_triage": {
+   "benchmark": true,
+   "default_model": "muse-spark-1.3",
+   "escalation_allowed": true,
+   "heavy_model": "muse-wonder-1.0",
+   "reasoning_effort": "low"
+  },
+  "notes_qa": {
+   "benchmark": true,
+   "default_model": "muse-spark-1.3",
+   "escalation_allowed": true,
+   "heavy_model": "muse-wonder-1.0",
+   "reasoning_effort": "low"
+  }
+ },
+ "ledger_path": "ledger.jsonl",
+ "price_note": "ESTIMATES ONLY: per-1K-token USD rates below are placeholder estimates for event cost tracking, not billed rates.",
+ "prices_usd_per_1k_tokens": {
+  "muse-spark-1.3": {
+   "completion": 0.006,
+   "note": "estimate",
+   "prompt": 0.0015
+  },
+  "muse-wonder-1.0": {
+   "completion": 0.02,
+   "note": "estimate",
+   "prompt": 0.004
+  }
+ },
+ "starting_offset_usd": 0
+}

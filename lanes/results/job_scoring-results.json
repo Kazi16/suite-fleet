@@ -1,0 +1,243 @@
+[
+  {
+    "id": 11067,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "Operator profile not provided so fit cannot be determined",
+        "Role is Training Support Specialist - Information Technology in Dallas, TX at $69,503/year"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 58,
+      "reasons": [
+        "IT training/support title aligns with technical support and end-user training work",
+        "$69,503/year is a solid mid-level salary in Dallas, TX",
+        "No job description, requirements, or remote status provided to verify detailed fit"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "0eb7118ac8e7",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11068,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided for comparison",
+        "Unable to evaluate title 'IS Support Specialist' fit without skills/preferences",
+        "Unable to evaluate location 'Grand Prairie, TX' and pay '$49,094/year' fit without target criteria"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 35,
+      "reasons": [
+        "IS Support Specialist title aligns with IT technical support experience",
+        "$49,094/year pay is below market for experienced support roles",
+        "Grand Prairie, TX location likely requires on-site work",
+        "No remote, seniority, or advancement indicators in listing"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "0c7b6c64ecca",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11069,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided for comparison, so fit cannot be determined",
+        "Role is Technical Support Specialist II, Ophthalmology at University Of Texas Southwestern Medical Cent in Dallas, TX",
+        "Pay listed as $62,304/year with no operator pay, location, or skill preferences to match against"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 55,
+      "reasons": [
+        "Technical Support Specialist II title matches mid-level technical support roles",
+        "$62,304/year salary is disclosed and within a moderate range",
+        "Stable university medical center employer in Dallas, TX",
+        "Likely on-site or hybrid in Dallas with no remote indication",
+        "Ophthalmology focus may require specialized clinical systems experience"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "5f577abf4f86",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11070,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile was provided for comparison",
+        "Role is IT Helpdesk Analyst (Onsite) in Sunrise, FL at Pediatrix",
+        "Pay listed as $54,563/year with no remote/hybrid flexibility indicated"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 32,
+      "reasons": [
+        "Onsite in Sunrise, FL limits fit for remote-focused candidates",
+        "IT Helpdesk Analyst is entry-level support rather than a senior/technical specialist role",
+        "Salary fixed at $54,563/year is low",
+        "No operator profile details provided to confirm location, clearance, or role alignment"
+      ],
+      "confidence": "low"
+    },
+    "agree": false,
+    "job_ref": "c473e5f2b16a",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11071,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided to match against",
+        "Title is Helpdesk Technician II at Independent Living Systems",
+        "Location is Miami, FL - fit unknown without profile",
+        "Pay is $53,621/year fixed"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 55,
+      "reasons": [
+        "Helpdesk Technician II title suggests a mid-level IT support role",
+        "Pay is $53,621/year, a modest salary that may be below target for experienced operators",
+        "Miami, FL location with no remote/hybrid information provided",
+        "No details on schedule, clearance, benefits, or required certifications to verify full fit"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "02a84da6f3d5",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11072,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided for comparison",
+        "Unable to evaluate role, location, or pay fit without preferences"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 65,
+      "reasons": [
+        "Title 'Tech Support Specialist' aligns with IT/tech support target roles",
+        "Pay listed at $118,686/year is very strong for tech support",
+        "Reputable large employer (Optum)",
+        "Location is Miami, FL with no remote/hybrid information provided",
+        "No job description, requirements, schedule, or benefits provided to verify fit"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "31b706973df8",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11073,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided for comparison of skills, experience, location, or pay preferences",
+        "Job lead is Information Security Analyst at Dallas Independent School District in Dallas, TX at $115,202/year with insufficient detail to assess fit"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 72,
+      "reasons": [
+        "Information Security Analyst title aligns with cybersecurity focus",
+        "$115,202/year salary is strong",
+        "Dallas, TX location is a major metro market",
+        "226-day school district schedule and likely on-site requirement may limit fit"
+      ],
+      "confidence": "low"
+    },
+    "agree": false,
+    "job_ref": "961a7a03fc89",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "strong"
+  },
+  {
+    "id": 11074,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided to compare against, cannot assess fit",
+        "Role is IT NextGen Support/Trainer at Texas Health Care in Fort Worth, TX",
+        "Pay is $50,102/year - target pay and location preferences unknown"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 35,
+      "reasons": [
+        "No operator profile details provided for targeted matching",
+        "On-site Fort Worth, TX role limits eligibility if remote/hybrid preferred",
+        "Specialized NextGen EHR support/trainer role requiring healthcare-specific domain experience",
+        "Pay fixed at $50,102/year, relatively low for IT support/training"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "e52a30c1ab81",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11075,
+    "spark": {
+      "score": 50,
+      "reasons": [
+        "No operator profile provided so fit cannot be determined",
+        "Missing pay information",
+        "Missing job description and requirements details"
+      ],
+      "confidence": "low"
+    },
+    "wonder": {
+      "score": 40,
+      "reasons": [
+        "Title 'IT Support Specialist' is relevant to an IT support profile, but the lead provides no duties, requirements, or seniority to confirm fit",
+        "Location is Fort Lauderdale, FL with no remote or hybrid information provided",
+        "No pay information is listed, so compensation fit cannot be verified"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "9a54c82cdde2",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  }
+]

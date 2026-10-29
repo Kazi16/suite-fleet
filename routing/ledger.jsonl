@@ -1,0 +1,1 @@
+{"ts": "2026-10-26T22:45:05.381735Z", "type": "call", "job_ref": "smoke-001", "lane": "mail_triage", "model": "muse-spark-1.3", "reasoning_effort": "low", "latency_ms": 10432, "prompt_tokens": 222, "completion_tokens": 566, "est_cost_usd": 0.003729, "status": "ok", "verdict": "pending", "reasoning_tokens": 499}
