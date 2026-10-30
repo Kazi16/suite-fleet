@@ -102,7 +102,7 @@ Plainly stated, because it matters to how this submission should be judged:
 
 Read these before quoting the dashboard numbers:
 
-1. Owner verdicts are still pending. Every published benchmark entry carries the verdict "pending". The agreement rates on the dashboard measure how often the two models agree with each other, not whether either was right. Owner accept, edit, and reject labels are the ground truth step, and they have not been applied to this set yet.
+1. Owner verdicts were applied on October 30, 2026. Every published benchmark entry now carries the owner's accept, edit, or reject judgment for each model output: 43 accept, 40 edit, and 11 reject across 94 outputs, shown in the dashboard's Owner verdicts section. The agreement rates still measure only how often the two models agree with each other, not whether either was right; the verdicts are the ground truth layer, and they are one owner's judgments, not an independent audit.
 2. One wording artifact is preserved on purpose. In the job scoring v2 high results, the model's written explanations repeatedly cite a "$2,000/year floor". That figure does not match the pay floor in the owner's standing criteria for these roles. The records are published exactly as generated, artifact included, because editing model output after the fact would make the rest of the ledger harder to trust. It is also the clearest small example of why an owner reviews the fleet's work before acting on it.
 3. Costs are estimates. Token counts and latencies are recorded from the API responses; dollar figures are computed from the router config, where the Spark prices are placeholders, so totals should be read as comparisons, not as billed amounts.
 

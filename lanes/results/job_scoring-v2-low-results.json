@@ -23,9 +23,11 @@
     },
     "agree": true,
     "job_ref": "ea4ae9e2b718",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "weak",
-    "wonder_band": "weak"
+    "wonder_band": "weak",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11068,
@@ -52,9 +54,11 @@
     },
     "agree": true,
     "job_ref": "1af81c8c60b5",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "possible",
-    "wonder_band": "weak"
+    "wonder_band": "weak",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11069,
@@ -81,9 +85,11 @@
     },
     "agree": true,
     "job_ref": "e1f29a892934",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "possible",
-    "wonder_band": "possible"
+    "wonder_band": "possible",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11070,
@@ -109,9 +115,11 @@
     },
     "agree": true,
     "job_ref": "47e07daa92d5",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "strong",
-    "wonder_band": "strong"
+    "wonder_band": "strong",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11071,
@@ -137,9 +145,11 @@
     },
     "agree": true,
     "job_ref": "69697a7fd6cd",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "strong",
-    "wonder_band": "strong"
+    "wonder_band": "strong",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11072,
@@ -165,9 +175,11 @@
     },
     "agree": true,
     "job_ref": "227826974189",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "strong",
-    "wonder_band": "strong"
+    "wonder_band": "strong",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11073,
@@ -193,9 +205,11 @@
     },
     "agree": true,
     "job_ref": "ffd3cb969c1e",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_band": "weak",
-    "wonder_band": "weak"
+    "wonder_band": "weak",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 11074,
@@ -222,9 +236,11 @@
     },
     "agree": true,
     "job_ref": "011592cefaac",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "possible",
-    "wonder_band": "possible"
+    "wonder_band": "possible",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 11075,
@@ -250,8 +266,10 @@
     },
     "agree": true,
     "job_ref": "771d1b1b526c",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_band": "strong",
-    "wonder_band": "strong"
+    "wonder_band": "strong",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   }
 ]

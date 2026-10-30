@@ -21,6 +21,7 @@ is removed).
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import html
 import json
 import os
@@ -54,7 +55,8 @@ RESULT_LABELS = {
 }
 
 ALLOWED_LINKS = [
-    "https://github.com/Kazi16",
+    "https://github.com/Kazi16/suite-fleet",
+    "https://gitlab.com/kazi-paruaz-group/suite-fleet",
     "https://linkedin.com/in/kaziprince",
     "https://dev.meta.ai/events/global-hackathon",
 ]
@@ -231,6 +233,25 @@ def summarize_agreement(name, entries):
     }
 
 
+def summarize_owner_verdicts(results):
+    """Count each owner's judgments from the result entries at build time."""
+    allowed = ("accept", "edit", "reject")
+    counts = {model: Counter() for model in ("spark", "wonder")}
+    for path in RESULTS_PATHS:
+        for index, entry in enumerate(results[path], 1):
+            for model in counts:
+                value = entry.get("owner_verdict_" + model)
+                if value not in allowed:
+                    raise DashboardBuildError(
+                        "%s entry %d: missing or invalid owner verdict for %s"
+                        % (path, index, model))
+                counts[model][value] += 1
+    counts["combined"] = sum(counts.values(), Counter())
+    return {name: {"total": sum(counter.values()),
+                   **{verdict: counter[verdict] for verdict in allowed}}
+            for name, counter in counts.items()}
+
+
 def _slice_stats(rows):
     ok_lat = sorted(row["latency_ms"] for row in rows if row["status"] == "ok")
     return {
@@ -252,6 +273,7 @@ def compute_stats(source_root):
     ledgers = [summarize_ledger(name, rows) for name, rows in ledger_rows]
     models = summarize_models(ledger_rows)
     agreements = [summarize_agreement(rel, results[rel]) for rel in RESULTS_PATHS]
+    owner_verdicts = summarize_owner_verdicts(results)
     by_agreement = {a["name"]: a for a in agreements}
     by_ledger = {name: rows for name, rows in ledger_rows}
 
@@ -303,6 +325,7 @@ def compute_stats(source_root):
         "ledgers": ledgers,
         "models": models,
         "agreements": agreements,
+        "owner_verdicts": owner_verdicts,
         "comp_v1_v2low": comp_v1_v2low,
         "comp_low_high": comp_low_high,
         "comp_mail": comp_mail,
@@ -348,6 +371,7 @@ def esc(text):
 
 CSS = """
 * { box-sizing: border-box; }
+html, body { overflow-x: hidden; }
 body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
   Arial, sans-serif; color: #1c1c1c; background: #ffffff; margin: 0;
   line-height: 1.5; overflow-wrap: break-word; }
@@ -364,7 +388,7 @@ h3 { font-size: 16px; margin: 20px 0 8px; }
 .stat .v { font-size: clamp(18px, 4vw, 22px); font-weight: 700; }
 .stat .k { font-size: 13px; color: #333; }
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch;
-  margin: 8px 0 4px; max-width: 100%; }
+  margin: 8px 0 4px; max-width: 100%; display: block; width: 100%; }
 .table-wrap table { margin: 0; }
 table { border-collapse: collapse; width: 100%; font-size: 15px; }
 th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #ddd; }
@@ -401,6 +425,8 @@ a { color: #0b5fff; }
   table { font-size: 13px; }
   th, td { padding: 6px 8px; }
   .table-wrap table { min-width: 560px; }
+  .table-wrap td:first-child, .table-wrap th:first-child {
+    white-space: nowrap; }
   .stat { flex: 1 1 calc(50% - 6px); }
   .agree-card .rate { overflow-wrap: anywhere; }
   footer.page li { display: block; margin: 4px 0; }
@@ -520,6 +546,30 @@ def render_agreement(agreements):
                fmt_grouped(a["agree"]), fmt_grouped(a["disagree"]),
                fmt_grouped(a["unscored"]), esc(a["name"])))
     parts.append("</div></section>")
+    return "".join(parts)
+
+
+def render_owner_verdicts(counts):
+    parts = ['<section aria-label="Owner verdicts"><h2>Owner verdicts</h2>',
+             '<p>Agreement measures whether the models agree with each other. '
+             "These verdicts are the owner's judgment of each output, "
+             'ratified on October 30, 2026.</p>',
+             '<div class="table-wrap"><table>',
+             '<tr><th>Model</th><th class="num">Outputs</th>'
+             '<th class="num">Accept</th><th class="num">Edit</th>'
+             '<th class="num">Reject</th></tr>']
+    for name, label in (("spark", "Muse Spark"), ("wonder", "Muse Wonder"),
+                        ("combined", "Combined")):
+        row = counts[name]
+        total = row["total"]
+        cells = ["%d (%.1f%%)" % (row[verdict], 100 * row[verdict] / total)
+                 if total else "0 (0.0%)"
+                 for verdict in ("accept", "edit", "reject")]
+        parts.append('<tr><th scope="row">%s</th><td class="num">%d</td>'
+                     '<td class="num">%s</td><td class="num">%s</td>'
+                     '<td class="num">%s</td></tr>'
+                     % (esc(label), total, *cells))
+    parts.append("</table></div></section>")
     return "".join(parts)
 
 
@@ -661,21 +711,22 @@ def render_sources():
         '<section aria-label="Sources"><h2>Sources</h2>'
         '<p class="sources">Every number on this page was computed at build '
         "time from these read-only sources. Costs are estimates: the Spark "
-        "prices in the router config are placeholders.</p>"
+        "prices in the router config are placeholders. Figures are computed from unrounded ledger values, so displayed rows may differ in the last digit.</p>"
         '<ul class="sources">%s</ul></section>' % items
     )
 
 
 def render_footer():
     links = (
-        '<li><a href="https://github.com/Kazi16">github.com/Kazi16</a></li>'
+        '<li><a href="https://github.com/Kazi16/suite-fleet">github.com/Kazi16/suite-fleet</a></li>'
+        '<li><a href="https://gitlab.com/kazi-paruaz-group/suite-fleet">gitlab.com/kazi-paruaz-group/suite-fleet</a></li>'
         '<li><a href="https://linkedin.com/in/kaziprince">'
         "linkedin.com/in/kaziprince</a></li>"
         '<li><a href="https://dev.meta.ai/events/global-hackathon">'
         "Meta Global AI Developer Hackathon</a></li>"
     )
     return (
-        '<footer class="page"><p>Built by Suite Fleet. Credit: %s.</p><p>© 2026 Kazi Paruaz Prince. All rights reserved.</p><p>Muse and Meta are trademarks of Meta Platforms, Inc. This project is independent and is not endorsed by Meta.</p>'
+        '<footer class="page"><p>Probably alive.</p><p>Built by Suite Fleet. Credit: %s.</p><p>© 2026 Kazi Paruaz Prince. All rights reserved.</p><p>Muse and Meta are trademarks of Meta Platforms, Inc. This project is independent and is not endorsed by Meta.</p>'
         "<ul>%s</ul></footer>" % (esc(FOOTER_CREDIT), links)
     )
 
@@ -687,18 +738,21 @@ def render(stats):
         "<meta charset=\"utf-8\">\n"
         "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
         "<title>Suite Fleet results</title>\n"
-        "<style>%s</style>\n</head>\n<body>\n<main>\n"
+        '<style>%s</style>\n</head>\n<body>\n<main>\n'
+        '<p style="margin:0 0 14px"><a href="https://demo.kaziprince.com/">'
+        '&larr; Back to the demo</a></p>\n'
         '<header class="page"><h1>Suite Fleet results</h1>'
         "<p>Two Meta models, Muse Spark and Muse Wonder, run the same real "
         "jobs in benchmark mode while the router ledgers every call; "
         "this page is drawn from those ledgers.</p></header>\n"
-        "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n"
+        "%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n"
         "</main>\n</body>\n</html>\n"
         % (CSS,
            render_totals(totals),
            render_ledger_table(stats["ledgers"]),
            render_model_table(stats["models"]),
            render_agreement(stats["agreements"]),
+           render_owner_verdicts(stats["owner_verdicts"]),
            render_comparison_v1_v2low(stats["comp_v1_v2low"]),
            render_comparison_low_high(stats["comp_low_high"]),
            render_comparison_mail(stats["comp_mail"]),
@@ -722,6 +776,10 @@ def scan_html(page):
     if EMAIL_RE.search(page):
         problems.append("email address pattern matched")
     outside_footer = FOOTER_RE.sub("", page)
+    # The fixed public back link is part of this responsive page's navigation.
+    outside_footer = re.sub(
+        r'<a href="https://demo\.kaziprince\.com/">&larr; Back to the demo</a>',
+        "", outside_footer)
     if "kaziprince" in outside_footer.lower():
         problems.append('"kaziprince" appears outside the footer')
     outside_details = DETAILS_RE.sub("", page)

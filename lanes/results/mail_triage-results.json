@@ -15,9 +15,11 @@
     },
     "agree": true,
     "job_ref": "42e69872234c",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_priority": "low",
-    "wonder_priority": "medium"
+    "wonder_priority": "medium",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 185319,
@@ -35,9 +37,11 @@
     },
     "agree": false,
     "job_ref": "91b66c795c35",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 185317,
@@ -55,9 +59,11 @@
     },
     "agree": false,
     "job_ref": "2b04c2a0cefe",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 185316,
@@ -75,9 +81,11 @@
     },
     "agree": false,
     "job_ref": "80d36a3fa4d0",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 185315,
@@ -95,9 +103,11 @@
     },
     "agree": true,
     "job_ref": "8c321713cc33",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 185314,
@@ -115,9 +125,11 @@
     },
     "agree": false,
     "job_ref": "0c79c66c9203",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 185312,
@@ -135,9 +147,11 @@
     },
     "agree": false,
     "job_ref": "9337c76de876",
-    "verdict": "pending",
+    "verdict": "accept",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "accept"
   },
   {
     "id": 185311,
@@ -155,9 +169,11 @@
     },
     "agree": false,
     "job_ref": "518d960df909",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 185310,
@@ -175,9 +191,11 @@
     },
     "agree": false,
     "job_ref": "2e3dba68802a",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_priority": "medium",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "edit",
+    "owner_verdict_wonder": "edit"
   },
   {
     "id": 185309,
@@ -195,8 +213,10 @@
     },
     "agree": false,
     "job_ref": "f0d72f35d4d2",
-    "verdict": "pending",
+    "verdict": "edit",
     "spark_priority": "low",
-    "wonder_priority": "low"
+    "wonder_priority": "low",
+    "owner_verdict_spark": "accept",
+    "owner_verdict_wonder": "edit"
   }
 ]

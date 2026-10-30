@@ -1,0 +1,262 @@
+[
+  {
+    "id": 11067,
+    "spark": {
+      "score": 35,
+      "reasons": [
+        "Location Dallas, TX does not meet South Florida (Broward, Miami-Dade) preference and is not listed as remote",
+        "Title Training Support Specialist - Information Technology is training-focused, not the targeted IT support / help desk / service desk role",
+        "Pay $69,503/year meets pay floor requirement",
+        "Winstead appears to be a direct-hire employer, not a staffing firm, which satisfies direct-hire preference"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 28,
+      "reasons": [
+        "Direct-hire employer (Winstead, not a staffing firm) and pay $69,503/year is well above the floor",
+        "Title is Training Support Specialist - IT, not a core IT support/help desk/service desk role",
+        "Location is Dallas, TX - not South Florida (Broward/Miami-Dade) and not listed as remote",
+        "No description provided to verify experience requirement <=4 years or Active Directory/Microsoft 365 fit"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "fd28ff37cbe4",
+    "verdict": "pending",
+    "spark_band": "weak",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11068,
+    "spark": {
+      "score": 35,
+      "reasons": [
+        "Title IS Support Specialist closely matches target IT support / help desk roles",
+        "Addus Homecare is a direct healthcare employer, not a staffing firm",
+        "Pay $49,094/year is above the stated floor",
+        "Location Grand Prairie, TX fails South Florida preference with no remote indication"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 30,
+      "reasons": [
+        "Role title matches target IT support/help desk profile",
+        "Addus Homecare appears to be a direct-hire employer, not a staffing firm",
+        "Pay of $49,094/year exceeds the stated floor",
+        "Location is Grand Prairie, TX, not South Florida (Broward/Miami-Dade) and not stated as remote",
+        "No description provided to verify experience requirement is 4 years or less or alignment with Active Directory/Microsoft 365 experience"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "fd7ddf8752df",
+    "verdict": "pending",
+    "spark_band": "weak",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11069,
+    "spark": {
+      "score": 35,
+      "reasons": [
+        "Title 'Technical Support Specialist II' partially matches IT support target but Ophthalmology specialization suggests non-general help desk role",
+        "Location Dallas, TX is outside South Florida (Broward, Miami-Dade) preference and not listed as remote",
+        "Direct-hire employer (University medical center) satisfies no-staffing-firms requirement",
+        "Pay $62,304/year exceeds floor"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 42,
+      "reasons": [
+        "Role matches target IT support / technical support roles",
+        "Direct-hire university employer, not a staffing firm",
+        "Pay $62,304/year is well above the $2,000/year floor",
+        "Location is Dallas, TX, not South Florida and no remote option indicated",
+        "Experience and Active Directory/Microsoft 365 requirements not provided to verify fit against 3 years and 4-year dealbreaker"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "a7c6e9009dc5",
+    "verdict": "pending",
+    "spark_band": "weak",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11070,
+    "spark": {
+      "score": 95,
+      "reasons": [
+        "Title IT Helpdesk Analyst directly matches target help desk / IT support roles",
+        "Location Sunrise, FL is in Broward County, strongly preferred South Florida area",
+        "Pay $54,563/year exceeds stated floor and no below-floor fail",
+        "Company Pediatrix appears to be direct-hire employer, not a staffing firm, with no dealbreakers evident"
+      ],
+      "confidence": "high"
+    },
+    "wonder": {
+      "score": 90,
+      "reasons": [
+        "Title 'IT Helpdesk Analyst' directly matches target IT support/help desk roles",
+        "Sunrise, FL is in Broward County, South Florida strongly preferred location",
+        "Pay $54,563/year is well above $2,000/year floor",
+        "Pediatrix appears to be a direct-hire employer, not a staffing firm",
+        "No dealbreaker identified; experience requirement not stated in listing to verify against 4-year limit or AD/M365 fit"
+      ],
+      "confidence": "medium"
+    },
+    "agree": true,
+    "job_ref": "7c435f7a4524",
+    "verdict": "pending",
+    "spark_band": "strong",
+    "wonder_band": "strong"
+  },
+  {
+    "id": 11071,
+    "spark": {
+      "score": 90,
+      "reasons": [
+        "Title Helpdesk Technician II directly matches target help desk / IT support roles",
+        "Location Miami, FL is in strongly preferred Miami-Dade / South Florida",
+        "Pay $53,621/year is well above floor",
+        "Company Independent Living Systems appears to be direct-hire employer, not a staffing firm, with no dealbreakers triggered"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 90,
+      "reasons": [
+        "Title 'Helpdesk Technician II' directly matches target help desk / IT support roles",
+        "Location Miami, FL is in strongly preferred Miami-Dade / South Florida area",
+        "Pay $53,621/year is well above the $2,000/year floor",
+        "Company Independent Living Systems appears to be a direct-hire employer, not a staffing firm",
+        "Level II role likely aligns with 3 years IT support experience; no indication of a >4 year requirement in provided data"
+      ],
+      "confidence": "medium"
+    },
+    "agree": true,
+    "job_ref": "2d1496045f3f",
+    "verdict": "pending",
+    "spark_band": "strong",
+    "wonder_band": "strong"
+  },
+  {
+    "id": 11072,
+    "spark": {
+      "score": 95,
+      "reasons": [
+        "Title Tech Support Specialist directly matches target IT support / help desk roles",
+        "Location Miami, FL is in strongly preferred Miami-Dade / South Florida",
+        "Optum is a direct-hire employer, not a staffing firm",
+        "Pay $118,686/year well exceeds pay floor"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 90,
+      "reasons": [
+        "Title 'Tech Support Specialist' matches IT support target role",
+        "Location Miami, FL is in strongly preferred Miami-Dade/South Florida area",
+        "Pay $118,686/year is well above the $2,000/year floor",
+        "Optum is a direct-hire employer, not a staffing firm",
+        "No experience requirement or duties provided to verify Active Directory/Microsoft 365 fit or >4-year dealbreaker"
+      ],
+      "confidence": "medium"
+    },
+    "agree": true,
+    "job_ref": "e2f0b60447a8",
+    "verdict": "pending",
+    "spark_band": "strong",
+    "wonder_band": "strong"
+  },
+  {
+    "id": 11073,
+    "spark": {
+      "score": 25,
+      "reasons": [
+        "Role mismatch: Information Security Analyst vs target IT support / help desk / service desk",
+        "Location mismatch: Dallas, TX is not South Florida (Broward, Miami-Dade) and not listed as remote",
+        "Skill mismatch: profile is 3 years IT support with Active Directory/Microsoft 365 vs security analyst specialty",
+        "Passes positives: $115,202/year exceeds pay floor and Dallas ISD is direct-hire employer, not staffing firm"
+      ],
+      "confidence": "high"
+    },
+    "wonder": {
+      "score": 18,
+      "reasons": [
+        "Title is Information Security Analyst, not target IT support/help desk/service desk role",
+        "Location is Dallas, TX, not South Florida (Broward/Miami-Dade) and not stated as remote",
+        "Employer is Dallas Independent School District, a direct-hire employer not a staffing firm",
+        "Pay of $115,202/year is well above the pay floor",
+        "No experience requirement provided to verify fit with 3 years IT support, Active Directory, and Microsoft 365 background"
+      ],
+      "confidence": "medium"
+    },
+    "agree": true,
+    "job_ref": "86700c1481ac",
+    "verdict": "pending",
+    "spark_band": "weak",
+    "wonder_band": "weak"
+  },
+  {
+    "id": 11074,
+    "spark": {
+      "score": 45,
+      "reasons": [
+        "Title IT NextGen Support/Trainer aligns with target IT support / help desk roles",
+        "Company Texas Health Care appears to be direct-hire healthcare employer, not a staffing firm",
+        "Pay $50,102/year is well above the stated floor",
+        "Location Fort Worth, TX conflicts with South Florida (Broward, Miami-Dade) preferred / remote-acceptable requirement with no remote indicated"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 40,
+      "reasons": [
+        "Title IT NextGen Support/Trainer aligns with IT support target role",
+        "Company Texas Health Care appears to be a direct-hire employer, not a staffing firm",
+        "Pay $50,102/year exceeds the $2,000/year floor",
+        "Location Fort Worth, TX is outside strongly preferred South Florida (Broward, Miami-Dade) and not listed as remote",
+        "No experience requirement provided to verify against 3 years experience or the >4-year dealbreaker"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "3f62440e1d36",
+    "verdict": "pending",
+    "spark_band": "possible",
+    "wonder_band": "possible"
+  },
+  {
+    "id": 11075,
+    "spark": {
+      "score": 85,
+      "reasons": [
+        "Title 'IT Support Specialist' directly matches target IT support role",
+        "Location Fort Lauderdale, FL is in preferred Broward County, South Florida",
+        "Company ASM Global appears to be direct employer, not a staffing firm",
+        "Pay undisclosed so pay floor cannot be verified, no dealbreaker triggered"
+      ],
+      "confidence": "medium"
+    },
+    "wonder": {
+      "score": 85,
+      "reasons": [
+        "Title 'IT Support Specialist' directly matches target IT support/help desk/service desk roles",
+        "Location Fort Lauderdale, FL is in Broward County within strongly preferred South Florida area",
+        "Company ASM Global appears to be a direct-hire employer, not a staffing firm",
+        "No pay shown in pay_text, so pay floor cannot be verified but no below-floor fail is present",
+        "No experience requirement or duties listed, so cannot verify >4-year dealbreaker or fit for 3 years IT support, B.S. IT Management, Active Directory and Microsoft 365"
+      ],
+      "confidence": "low"
+    },
+    "agree": true,
+    "job_ref": "ce173cf57cc7",
+    "verdict": "pending",
+    "spark_band": "strong",
+    "wonder_band": "strong"
+  }
+]
