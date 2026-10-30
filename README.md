@@ -57,36 +57,7 @@ The measured lanes published here today are mail triage and job lead scoring. De
 
 One server. Clear roles, deliberate handoffs, and approval gates that stay with me.
 
-```text
-                         +----------------------+
-                         |       Entrant        |
-                         | directs, decides,    |
-                         | audits, approves     |
-                         +----------+-----------+
-                                    |
-                         +----------v-----------+
-                         |  Coordinating seat   |
-                         |  plans work, owns    |
-                         |  review and gates    |
-                         +--+---------+------+--+
-                            |         |      |
-              +-------------+   +-----v---+  +-------------+
-              |                 |         |                |
-   +----------v-------+  +------v------+  |  +-------------v-------------+
-   |   Helper seat    |  | Second      |  |  |        Model lanes        |
-   |   research,      |  | review pass |  |  | routing picks a lane per  |
-   |   prep, checks   |  | on builds   |  |  | job; Meta models run the  |
-   +------------------+  +-------------+  |  | four real jobs; every run |
-                                          |  | logs cost and latency     |
-              +------------------+        |  +-------------+-------------+
-              |  Builder tools   |        |                |
-              |  Muse and Codex +--------+                |
-              +------------------+                         |
-                                                    +------v------+
-                                                    |  Public     |
-                                                    |  dashboard  |
-                                                    +-------------+
-```
+![Suite Fleet architecture](docs/architecture.svg)
 
 How a job flows: I set the work and the rules. My coordinating seat plans it and routes it. My helper seat does research, prep, and checks. My builder tools write the code. A second review pass checks builds before they move forward, and the coordinating seat reviews again before anything ships. The model lanes do the measured daily jobs. Approval gates for money, outbound messages, and submissions stay with me at every step.
 

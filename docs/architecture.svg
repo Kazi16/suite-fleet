@@ -1,0 +1,23 @@
+<svg class="architecture-diagram" viewBox="0 0 1000 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagram-title diagram-desc"><style>.diagram-box rect{fill:#f8faff;stroke:#b9c8e9;stroke-width:2}.owner-box rect{fill:#e7edfd;stroke:#9cb3e9}.main-box rect{fill:#3154b5;stroke:#3154b5}.diagram-box text{fill:#17223e;font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:25px;font-weight:700;text-anchor:middle}.main-box text{fill:#ffffff}</style><rect x="0" y="0" width="1000" height="430" fill="#ffffff"/>
+            <title id="diagram-title">Suite Fleet architecture</title>
+            <desc id="diagram-desc">Owner directs agent seats. Agent seats coordinate with a coding lane, reviewer seat, personal suite, and Meta Model API lanes. The coding lane also hands work to the reviewer seat.</desc>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#6775a2" stroke-width="1.8"/>
+              </marker>
+            </defs>
+            <g class="diagram-lines" fill="none" stroke="#6775a2" stroke-width="2.5" marker-end="url(#arrow)">
+              <path d="M 500 82 L 500 136"/>
+              <path d="M 405 180 L 243 180 L 243 241"/>
+              <path d="M 595 180 L 757 180 L 757 241"/>
+              <path d="M 315 282 L 683 282"/>
+              <path d="M 466 222 L 466 324 L 243 324 L 243 347"/>
+              <path d="M 534 222 L 534 324 L 757 324 L 757 347"/>
+            </g>
+            <g class="diagram-box owner-box"><rect x="405" y="24" width="190" height="58" rx="14"/><text x="500" y="60">Owner</text></g>
+            <g class="diagram-box main-box"><rect x="405" y="136" width="190" height="86" rx="17"/><text x="500" y="186">Agent seats</text></g>
+            <g class="diagram-box"><rect x="117" y="241" width="252" height="82" rx="17"/><text x="243" y="289">Coding lane</text></g>
+            <g class="diagram-box"><rect x="631" y="241" width="252" height="82" rx="17"/><text x="757" y="289">Reviewer seat</text></g>
+            <g class="diagram-box"><rect x="117" y="347" width="252" height="58" rx="14"/><text x="243" y="382">Personal suite</text></g>
+            <g class="diagram-box"><rect x="631" y="347" width="252" height="58" rx="14"/><text x="757" y="370"><tspan x="757" dy="0">Meta Model API</tspan><tspan x="757" dy="26">lanes</tspan></text></g>
+          </svg>
