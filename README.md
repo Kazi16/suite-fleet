@@ -31,25 +31,16 @@ I am publishing the measurements, including the runs where the new models lose, 
 
 This repo is a curated public staging of my hackathon layer only. I am not publishing the production fleet itself, its data, or its configuration here.
 
-```text
-README.md          this file: the project story, architecture, and disclosure
-LICENSE            proprietary license: viewing and evaluation only
-demo/              the demo site source (index.html, styles.css), live at the demo link above
-```
+- `README.md`: this file: the project story, architecture, and disclosure
+- `LICENSE`: proprietary license: viewing and evaluation only
+- `demo/`: the demo site source (index.html, styles.css), live at the demo link above
 
 These pieces landed here as I built them during the event:
 
-```text
-routing/           the model routing layer that sends each fleet job to a
-                   chosen model lane and logs cost and latency
-lanes/             the Meta model lanes for mail triage and job lead scoring,
-                   with their ledgers and measured results
-dashboard/         the public results dashboard source that renders the
-                   measured runs
-tools/             the hardened builder lane launcher: builds run detached with
-                   a heartbeat log and a terminal exit marker, so a dropped
-                   session no longer loses the build
-```
+- `routing/`: the model routing layer that sends each fleet job to a chosen model lane and logs cost and latency
+- `lanes/`: the Meta model lanes for mail triage and job lead scoring, with their ledgers and measured results
+- `dashboard/`: the public results dashboard source that renders the measured runs
+- `tools/`: the hardened builder lane launcher: builds run detached with a heartbeat log and a terminal exit marker, so a dropped session no longer loses the build
 
 The measured lanes published here today are mail triage and job lead scoring. Deal evaluation and notes QA run in the fleet but have no measured runs published yet.
 
