@@ -112,6 +112,7 @@ Read these before quoting the dashboard numbers:
 2. GitHub: https://github.com/Kazi16/suite-fleet
 3. GitLab: https://gitlab.com/kazi-paruaz-group/suite-fleet
 4. LinkedIn: https://www.linkedin.com/in/kaziprince/
+5. Visual guide (PDF): docs/visual-guide.pdf — a plain language explainer of the project, drafted with AI assistance (ChatGPT) and verified against the published results on October 30, 2026.
 
 ## License
 
